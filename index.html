@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラッグアンドドロップフォームビルダー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toolbox">
+        <h3>ツールボックス</h3>
+        <div class="tool" draggable="true" data-type="input">入力フィールド</div>
+        <div class="tool" draggable="true" data-type="textarea">テキストエリア</div>
+        <div class="tool" draggable="true" data-type="button">ボタン</div>
+        <div class="tool" draggable="true" data-type="radio">ラジオボタン</div>
+    </div>
+    <div id="form-area">
+        <h3>フォームエリア</h3>
+        <p>ここに要素をドラッグアンドドロップしてください。</p>
+        <button id="clear-button">全て削除</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

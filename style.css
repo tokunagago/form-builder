@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#toolbox, #form-area {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+#toolbox {
+    background-color: #f9f9f9;
+}
+
+.tool {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e0e0e0;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: grab;
+}
+
+#form-area {
+    background-color: #fff;
+    position: relative;
+    min-height: 100%;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #d0f0d0;
+    border: 1px solid #aaa;
+    cursor: grab;
+}
+
+#clear-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ffcccc;
+    border: 1px solid #ff8888;
+    cursor: pointer;
+    border-radius: 3px;
+}
